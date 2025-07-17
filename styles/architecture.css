@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -6,5 +12,130 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+/* sheard style  */
+.dark-01{
+    color: #131313;
+}
+
+
+.dark-03a{
+    color: #727272;
+}
+
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+/* header style section  */
+.header{
+    background-color: rgba(255, 144, 14, 0.1);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+/* navbar section style  */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.brand-name{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;
+    gap: 50px;
+}
+
+.navbar .nav-item{
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.navbar .nav-link{
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner related style  */
+.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner-content{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 70px;
+
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom:  25px;
+}
+
+.banner-description{
+    margin-bottom: 32px;
+}
+.banner-image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* media qurey for mobile device */
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .brand-name{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .nav-links{
+        gap: 20px;
+    }
+    .banner-content{
+        margin-top: 20px;
+    }
+    .banner-title{
+        font-weight: bold;
+        font-size: 2rem;
+        margin-bottom:  25px;
+    }
+    .btn-primary{
+        background-color: #FF900E;
+        color: white;
+        padding: 10px 12px;
+        border-radius: 6px;
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+  
+
+
 }
 
