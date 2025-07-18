@@ -14,12 +14,21 @@
   font-style: normal;
 }
 /* sheard style  */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+    margin-bottom: 130px;
+}
+
 .dark-01{
     color: #131313;
 }
 
 
-.dark-03a{
+.dark-03{
     color: #727272;
 }
 
@@ -39,6 +48,7 @@
     background-color: rgba(255, 144, 14, 0.1);
     max-width: 1920px;
     margin: 0 auto;
+    margin-bottom: 85px;
 }
 
 
@@ -97,7 +107,47 @@
 .banner-image{
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 45px;
+} 
+
+
+/* main section style start  */
+/* teams section */
+
+.teams{
+    display: flex;
+    align-items: center;
+    gap: 76px;
 }
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+.image-container > img{
+    width: 100%;
+}
+
+.feature-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px ;
+}
+
+.feature-description{
+    margin-bottom: 32px;
+}
+
+#Quick-list{
+    font-weight: 500;
+    color: #727272;
+}
+
+#Features{
+    color: #FF900E;
+}
+
 
 
 
@@ -105,13 +155,13 @@
 
 @media screen and (max-width: 576px) {
     .navbar{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 20px;
         padding: 20px;
     }
 
     .brand-name{
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
     }
     .nav-links{
@@ -123,18 +173,34 @@
     .banner-title{
         font-weight: bold;
         font-size: 2rem;
-        margin-bottom:  25px;
+        margin-bottom:  15px;
+    }
+    .banner-image{
+        margin: -20px 0 20px;
     }
     .btn-primary{
-        background-color: #FF900E;
-        color: white;
         padding: 10px 12px;
         border-radius: 6px;
-        border: none;
         font-size: 1rem;
-        font-weight: 600;
+        margin-top: -20px;
     }
-  
+    
+
+    /* teams and features style  */
+    .teams{
+        flex-direction: column;
+        margin: 20px;
+        margin-top: -20px;
+    }
+    .our-features{
+        text-align: center;
+        margin-top: -40px;
+    }
+    .feature-title{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    
+    }
 
 
 }
